@@ -1,0 +1,74 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background:rgb(155,155,155);
+  background:snow;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+h1 {
+  position:absolute;
+  text-align:center;
+  top:0px;
+  left:40px;
+}
+
+div img {
+  position:absolute;
+  left:150px;
+  top:150px;
+}
+
+div img.scrool {
+  transform:rotate(20deg);
+}
+
+div.progess-bar div.border {
+  border:3px solid rgb(0, 1, 0);
+  width:210px;
+  height:30px;
+  position:absolute;
+  left:85px;
+  top:75px;
+}
+
+div.progess-bar div.background {
+  width:207px;
+  height:23.5px;
+  background:#41b883;
+  position:absolute;
+  left:85px;
+  top:78px;
+}
+
+resource-message:before {
+  content:attr(data);
+  background:rgb(128,128,128);
+  border:4px solid black;
+  color:white;
+  height:180px;
+  width:220px;
+  position:absolute;
+  left:220px;
+  top:145px;
+}
